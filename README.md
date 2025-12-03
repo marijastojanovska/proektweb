@@ -9,7 +9,7 @@
 4. Drivers → копирај full connection string, пример:
    `mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/tees?retryWrites=true&w=majority`
 
-2) Backend
+2) Backend (server)
 ```bash
 cd server
 cp .env.example .env 
@@ -29,7 +29,7 @@ RESEND_API_KEY=re_********************************
 MAIL_FROM="TeeShop Pro <noreply@yourdomain.com>"
 ```
 
-3) Frontend (локално)
+3) Frontend(client)
 ```bash
 cd client
 cp .env.example .env   
@@ -56,4 +56,5 @@ npm run dev            # http://localhost:5173
 ## Забелешки
 - Овој проект користи **API-based е-пошта** (Resend) → нема потреба од SMTP/хостинг.
 - Потребен е Node **>=18** (за `fetch` на backend).
+
 
