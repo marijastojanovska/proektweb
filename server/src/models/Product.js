@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema({
   description: { type: String, required: true },
   image: { type: String, required: true },
   price: { type: Number, required: true, min: 0 },
-  countInStock: { type: Number, required: true, min: 0, default: 0 },
+  countInStock: { type: Number, required: true, default: 0 },
   sizes: [{ type: String }],
   colors: [{ type: String }],
   brand: { type: String, default: 'TEEPRO' },
